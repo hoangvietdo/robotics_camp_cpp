@@ -16,10 +16,13 @@ find_package(turtlesim REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 add_executable(feed_forward_circle_node src/feed_forward_circle.cpp)
+add_executable(feed_forward_8_shape_node src/feed_forward_8_shape.cpp)
 ament_target_dependencies(feed_forward_circle_node rclcpp geometry_msgs turtlesim)
+ament_target_dependencies(feed_forward_8_shape_node rclcpp geometry_msgs turtlesim)
 
 install(TARGETS
   feed_forward_circle_node
+  feed_forward_8_shape_node
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
