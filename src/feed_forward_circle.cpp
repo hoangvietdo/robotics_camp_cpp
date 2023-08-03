@@ -13,7 +13,7 @@ class RobotController : public rclcpp::Node{
     }
 
   private:
-    float t = 0.0
+    float t = 0.0;
     float a = 5.0;
     float b = 0.7;
     float x_d, y_d, x_dd, y_dd;
